@@ -1,0 +1,69 @@
+@font-face {
+    font-family: PT Mono, monospace;
+}
+
+*{
+    font-family: sans-serif;
+}
+
+body {
+    background-color:azure;
+}
+
+.Navigation{
+    width: 900px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+.Navigation li{ 
+    display: inline-block;
+    border: 1px dotted lightcoral;
+    padding: 20px;
+}
+
+a:hover{
+    font-weight: bold;
+}
+
+thead{
+    font-weight: 600;
+    color:bisque;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.subtitle {
+    background-color: coral;
+    font-weight: 600;
+}
+
+table {
+    border: 2px solid purple;
+    width: 900px;
+    margin: 0 auto; 
+}
+
+h2 {
+    text-align: center;
+}
+
+td {
+    border: 1px solid purple;
+}
+
+.item{
+    font-family: PT Mono, monospace;
+    background-color: lightsalmon;
+}
+
+header{
+    font-family: PT Mono, monospace; 
+    text-align: center;
+}
+
+footer {
+    width: 600px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}

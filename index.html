@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michaela HTML & CSS cheatsheet</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--Banner Section-->
+    <div>
+    <header>
+        <h1>Michaela's HTML & CSS cheatsheet</h1>
+            <h3>Compiled June 2023 by <a href="#author info">Michaela Davis</a></h3>
+    </header>
+    </div>
+    <!--Navigation Bar-->
+    <div>
+        <nav>
+            <ul class="Navigation">
+                <li><a href="#HTML Tags">HTML Tags</a></li>
+                <li><a href="#HTML Tables">HTML Tables</a></li>
+                <li><a href="#HTML Forms">HTML Forms</a></li>
+                <li><a href="#HTML Semantics">HTML Semantics</a></li>
+                <li><a href="#HTML Attributes">HTML attributes</a></li>
+                <br>
+                <li><a href="#CSS Selectors">CSS Selectors</a></li>
+                <li><a href="#CSS Properties">CSS Properties</a></li>
+                <li><a href="#CSS Fonts">CSS Fonts/Typography</a></li>
+                <li><a href="#Box Model">Box Model and positioning</a></li>
+                <li><a href="#CSS Colors">CSS colors</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--HTML Tags Table and notes-->
+    <div>
+    <section>
+        <h2>HTML Various Tags</h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Tag</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="subtitle" id="HTML Tags">Common HTML Tags</td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;h1&gt;</td>
+                    <td>Heading 1</td>
+                    <td>Headings and sub-headings, &lt;h1&gt; - &lt;h6&gt; tags, are used to provide titles for sections of content. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>Anchor, &lt;a&gt; tags, are used to link to internal pages, external pages or content on the same page.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;p&gt; &lt;span&gt; &lt;div&gt;</td>
+                    <td>p, span, div</td>
+                    <td>Text and block tags, are used to specify different sections of content on a page. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;em&gt; &lt;strong&gt;</td>
+                    <td>Emphasize text</td>
+                    <td>Em and Strong tags, are used to Emphasize text. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;br&gt;</td>
+                    <td>Line Break</td>
+                    <td>Adding &lt;br&gt; will add a line break in the content. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;ol&gt; &lt;ul&gt; &lt;li&gt;</td>
+                    <td>Ordered and Unordered lists</td>
+                    <td>Ordered list &lt;ol&gt; are numbered and unordered lists &lt;ul&gt; are bulleted. List items are enclosed in &lt;li&gt; tags.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;body&gt;</td>
+                    <td>Body</td>
+                    <td>Any visible content should be placed within the &lt;body&gt; tags.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;img&gt; &lt;video&gt;</td>
+                    <td>Images and videos</td>
+                    <td>Images and videos can be added by linking to an existing source.  &lt;img&gt; is a self closing tag while &lt;video&gt; is not.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;head&gt;</td>
+                    <td>Head - Info about the webpage</td>
+                    <td>The &lt;head&gt; tag contains information about the web page such as the tab title and links to CSS and JS files. 
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;Title&gt;</td>
+                    <td>Title of Webpage</td>
+                    <td>The &lt;title&gt; tag, always within the &lt;head&gt; tag - gives the website and tab its title.  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="subtitle" id="HTML Tables">HTML Table Tags</td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>The wrapper element for all HTML tables.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;thead&gt;</td>
+                    <td>Table Head</td>
+                    <td>The set of rows defining the column headers in a table.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;tbody&gt;</td>
+                    <td>Table Body</td>
+                    <td>The set of rows containing actual table data.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;tr&gt; &lt;td&gt;</td>
+                    <td>Table Row and Table Data</td>
+                    <td>Table row and Table Data containers &lt;td&gt; is always nested inside of &lt;tr&gt; tags.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;tfoot&gt;</td>
+                    <td>Table Footer</td>
+                    <td>The set of rows defining the footer in a table.  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="subtitle" id="HTML Forms">HTML Form Tags</td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;form&gt;</td>
+                    <td>Form</td>
+                    <td>A form allows users to input information and send it.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;input&gt;</td>
+                    <td>Input</td>
+                    <td>To add fields for users to input information, use the &lt;input&gt; tag and set the type attribute to a field of your choosing.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;select&gt;</td>
+                    <td>Select</td>
+                    <td>A &lt;select&gt; element paired with a &lt;option&gt; element renders a dropdown list selection.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;datalist&gt;</td>
+                    <td>Datalist</td>
+                    <td>A &lt;datalist&gt; element is populated with &lt;option&gt; elements and works with an &lt;input&gt; to search through choices.  
+                    </td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;textarea&gt;</td>
+                    <td>Textarea</td>
+                    <td>A &lt;textarea&gt; element is a text input field that has a customizable area.  
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="subtitle" id="HTML Semantics">HTML Semantic Tags</td>
+                </tr>
+                <tr>
+                    <td class="item">&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;</td>
+                    <td>Semantic tags</td>
+                    <td>Semantic tags creat the basic structure of a webpage.  </td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Defines elements in a document, such as chapters, headings, or any other area of the document with the same theme.</td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;article&gt;</td>
+                    <td>Article</td>
+                    <td>Holds content that makes sense on its own such as articles, blogs, comments, etc.</td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Contains information that is related to the main content, but not required in order to understand the dominant information.</td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;figure&gt;</td>
+                    <td>Figure</td>
+                    <td>Encapsulates all types of media like pictures, graphs, and tables.</td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;figcaption&gt;</td>
+                    <td>Figure Caption</td>
+                    <td>Used to describe media in &lt;figure&gt;.</td>
+                   </tr>
+                   <tr>
+                    <td class="item">&lt;video&gt;, &lt;embed&gt;, &lt;audio&gt;</td>
+                    <td>Media files</td>
+                    <td>Tags used for different types of media files on a page.</td>
+                   </tr>
+            </tbody>
+        </table>
+    </section>
+    </div>
+    <!--HTML Attributes-->
+    <div>
+        <section>
+            <h2>HTML Attributes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Attribute</td>
+                            <td>Name</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="subtitle" id="HTML Attributes">Common HTML Attributes</td>
+                        </tr>
+                       <tr>
+                        <td class="item">colspan</td>
+                        <td>Column Span</td>
+                        <td>Defines how many columns a td element should span.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">rowspan</td>
+                        <td>Row Span</td>
+                        <td>Defines how many rows a td element should span.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">text</td>
+                        <td>type=text</td>
+                        <td>Setting type to "text" creates a single row field for text input.
+                        </td>
+                       </tr>
+                       <tr>
+                        <td class="item">password</td>
+                        <td>type=password</td>
+                        <td>Setting type to "password" creates a single row field that censors text input.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">number</td>
+                        <td>type=number</td>
+                        <td>Setting type to "number" creates a single row field for number input.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">range</td>
+                        <td>type=range</td>
+                        <td>Setting type to "range" creates a slider to select from a range of numbers.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">checkbox</td>
+                        <td>type=checkbox</td>
+                        <td>Setting type to "checkbox" creates a single checkbox that can be paired with other checkboxes.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">radio</td>
+                        <td>type=radio</td>
+                        <td>Setting type to "radio" creates a radio button that can be paired with other radio buttons.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">submit</td>
+                        <td>type=submit</td>
+                        <td>Setting type to "submit" creates a submit button.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">required</td>
+                        <td>Required</td>
+                        <td>Adding te required attribute to an input related element will validate that the input field has information in it.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">min & max</td>
+                        <td>Minimum & Maximum</td>
+                        <td>Assigning a value to the min or max attribute of a number input element will validate an acceptable minumum or maximum value.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">minlength & maxlength</td>
+                        <td>Minimum Length & Maximum Length</td>
+                        <td>Assigning a value to the minlength or maxlength attribute of a text input element will validate an acceptable minumum or maximum number of characters.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">pattern</td>
+                        <td>Pattern</td>
+                        <td>Assigning a regex to pattern matches the input to the provided regex.</td>
+                       </tr>
+                    </tbody>
+                </table>
+        </section>
+    </div>
+    <!--CSS Selectors Table-->
+    <div>
+        <section>
+            <h2>CSS Selectors</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Selector</td>
+                            <td>Name</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="subtitle" id="CSS Selectors">Common CSS Selectors</td>
+                        </tr>
+                       <tr>
+                        <td class="item">Type</td>
+                        <td>Type - often an HTML tag</td>
+                        <td>An HTML tag or element such as &lt;h1&gt; or &lt;p&gt; can be chained together, if unrelated need to seperate with a comma.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">.Class</td>
+                        <td>class= inside HTML tag</td>
+                        <td>Class selectors must be prepended with a "." Class selectors are resusable.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">#ID</td>
+                        <td>id= inside HTML tag</td>
+                        <td>ID selectors must be prepended with a "#" ID selectors can only be used once.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">Attribute</td>
+                        <td>other elements listed within the HTML tags.</td>
+                        <td>Can select nested elements by seperating selectors with a space.</td>
+                       </tr>
+                       <tr>
+                        <td class="item">*</td>
+                        <td>Universal Selector</td>
+                        <td>All elements can be selected by using the universal selector.</td>
+                       </tr>
+                    </tbody>
+                </table>
+        </section>
+    </div>
+    <!--CSS Various Properties Table-->
+    <div>
+        <section>
+            <h2>CSS Properties</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>CSS Property Name</td>
+                            <td>Description & Common Selections</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="2" class="subtitle" id="CSS Properties">Common CSS Properties</td>
+                        </tr>
+                       <tr>
+                        <td class="item">border</td>
+                        <td>Can set pixel width, solid/dotted/dashed/ and color - no spaces</td>
+                       </tr>
+                       <tr>
+                        <td class="item">color</td>
+                        <td>Sets an element's color - for text - the text will be that color</td>
+                       </tr>
+                       <tr>
+                        <td class="item">bacground-color</td>
+                        <td>Sets an element's background color - text will be highlighted in that color</td>
+                       </tr>
+                       <tr>
+                        <td class="item">opacity</td>
+                        <td>Can make an element transparent or semi-transparent where 1 is fully opaque, 0 is fully transparent and any decimal in between is semi-transparent</td>
+                       </tr>
+                       <tr>
+                        <td class="item">background-image</td>
+                        <td>Sets the background of an element with an image rather than a color</td>
+                       </tr>
+                    <tr>
+                        <td colspan="2" class="subtitle" id="CSS Fonts">CSS Fonts/Typography</td>
+                    </tr>
+                       <tr>
+                        <td class="item">font-family</td>
+                        <td>Defines the typeface of an element, can list multiple as back-ups but first listed will be preferenced if available on the user's browser</td>
+                       </tr>
+                       <tr>
+                        <td class="item">font-size</td>
+                        <td>Controls the size of the text displayed</td>
+                       </tr>
+                       <tr>
+                        <td class="item">font-weight</td>
+                        <td>Defines how thick or thin text is displayed - number ranging from 100-900 (light-bold) with 400 being standard size</td>
+                       </tr>
+                       <tr>
+                        <td class="item">text-align</td>
+                        <td>Places the text in the left, right or center of its parent container</td>
+                       </tr>
+                       <tr>
+                        <td class="item">line-height</td>
+                        <td>Allow the vertical space between lines of text to be adjusted</td>
+                       </tr>
+                       <tr>
+                        <td class="item">word-spacing</td>
+                        <td>Changes how far apart individual words are</td>
+                       </tr>
+                       <tr>
+                        <td class="item">letter-spacing</td>
+                        <td>Changes how far apart individual letters are</td>
+                       </tr>
+                       <tr>
+                        <td colspan="2" class="subtitle" id="Box Model">The Box Model & Positioning</td>
+                       </tr>
+                       <tr>
+                        <td class="item">margin</td>
+                        <td>Amount of space outside an element's border, setting margin to "0 auto" horizontally centers an element inside of its parent content area, if it has a width</td>
+                       </tr>
+                       <tr>
+                        <td class="item">padding</td>
+                        <td>the space between the content area and the border. It can be set in pixels or percent</td>
+                       </tr>
+                       <tr>
+                        <td class="item">border</td>
+                        <td>surround the content area and padding of an element. The color, style, and thickness of a border can be set with CSS properties</td>
+                       </tr>
+                       <tr>
+                        <td class="item">overflow</td>
+                        <td>can be set to dispaly, hidden, or scorll and dictates how HTML will render content that overflows its parent element</td>
+                       </tr>
+                       <tr>
+                        <td class="item">visbility</td>
+                        <td>can hide or show elements</td>
+                       </tr>
+                       <tr>
+                        <td class="item">box-sizing</td>
+                        <td>Controls the box model used by the browser.  Default is "content-box", setting it to "border-box" will not affect border thickess or padding</td>
+                       </tr>
+                       <tr>
+                        <td class="item">position</td>
+                        <td>Allows you to specify position of element on page - common postions are static, absolute, relative, fixed, sticky</td>
+                       </tr>
+                       <tr>
+                        <td class="item">display</td>
+                        <td>allows you to control how an element flows vertically and horizontally in a document - commonly used are block, inline and inline-block</td>
+                       </tr>
+                       <tr>
+                        <td class="item">z-index</td>
+                        <td>specifies how far back or how far forward an element appears on the page when it overlaps other elements</td>
+                       </tr>
+                       <tr>
+                        <td class="item">float</td>
+                        <td>can move elements as far left or as far right as possible on a web page</td>
+                       </tr>
+                       <tr>
+                        <td class="item">clear</td>
+                        <td>You can clear a floated element's left or right side or both using the clear property</td>
+                       </tr>
+                    </tbody>
+                </table>
+        </section>
+    </div>
+    <!--CSS Colors Table-->
+    <div>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <td>CSS color type</td>
+                        <td>CSS color syntax</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="subtitle" id="CSS Colors">CSS Colors</td>
+                    </tr>
+                    <tr>
+                        <td class="item">Named Colors</td>
+                        <td>There are more than 140 colors that you can review <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">Here on MDN</a></td>
+                    </tr>
+                    <tr>
+                        <td class="item">Hexidecimal or Hex Colors</td>
+                        <td>Six digit number system with 16 digits 0-9 and A-F (#23F41A), starts with #, specifies red, blue and green, if all three values are duplicate then it can be shortened to three digits</td>
+                       </tr>
+                       <tr>
+                        <td class="item">RGB Colors</td>
+                        <td>Use rgb() syntax with on value for red, blue and green, values range from 0-255 and look like this rgb(7,210, 50)</td>
+                       </tr>
+                       <tr>
+                        <td class="item">HSL colors</td>
+                        <td>HSL stands for hue, saturation and lightness, hues range from 0-360 and saturation and lightness are represented as a percentage</td>
+                       </tr>
+                       <tr>
+                        <td colspan="2">Opacity can be added to RGB and HSL colors by adding a 4th value "a" with is a percentage</td>
+                       </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+<footer id="author info">
+    <h4>About the author</h4>
+    <p>Michaela Davis began learning front end web development in May 2023 with Codecademy.  She hopes to transition out of her career in academic reseach and social work in the coming year.</p>
+</footer>
+</html>
